@@ -53,7 +53,7 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="py-20 px-4 relative overflow-hidden scroll-mt-20">
+    <section id="skills" className="py-5 px-4 relative overflow-hidden scroll-mt-20">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-500/5 to-transparent"></div>
 

@@ -14,7 +14,7 @@ export default function Projects() {
     : projects.filter(p => p.category === selectedCategory);
 
   return (
-    <section id="projects" className="py-20 px-4 relative overflow-hidden scroll-mt-20">
+    <section id="projects" className="pt-5 pb-10 px-4 relative overflow-hidden scroll-mt-20">
       {/* Background */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -25,7 +25,7 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="gradient-text">My Projects</span>
@@ -48,10 +48,10 @@ export default function Projects() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+              className={`px-6 py-3 rounded-full font-semibold cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg ${
                 selectedCategory === category
-                  ? "bg-gradient-to-r from-blue-500 to-purple-500"
-                  : "glass-effect hover:bg-white/10"
+                  ? "bg-gradient-to-r from-blue-500 to-purple-500 hover:shadow-purple-500/40"
+                  : "glass-effect hover:bg-white/10 hover:shadow-blue-500/30"
               }`}
             >
               {category}
@@ -136,27 +136,6 @@ export default function Projects() {
             </motion.div>
           ))}
         </div>
-
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
-        >
-          <p className="text-gray-300 mb-6">
-            Want to see more? Check out my GitHub for additional projects and contributions.
-          </p>
-          <a
-            href="https://github.com/sarju90"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
-          >
-            Visit GitHub Profile
-          </a>
-        </motion.div>
       </div>
     </section>
   );

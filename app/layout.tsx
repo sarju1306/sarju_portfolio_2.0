@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sarju Dharsandiya | Web Developer Portfolio",
-  description: "Portfolio of Sarju Dharsandiya - Web Developer specializing in React, Next.js, TypeScript, and modern web technologies. View my projects and get in touch.",
+  title: "Sarju Dharsandiya | Software Development Engineer (SDE)",
+  description: "Portfolio of Sarju Dharsandiya - Software Development Engineer specializing in React, Next.js, TypeScript, and modern web technologies. View my projects and get in touch.",
 };
 
 export default function RootLayout({

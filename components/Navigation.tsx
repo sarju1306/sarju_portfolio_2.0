@@ -55,7 +55,10 @@ export default function Navigation() {
           {/* Logo */}
           <motion.a
             href="#"
-            onClick={(e) => smoothScroll(e, "#")}
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             className="text-2xl font-bold gradient-text"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

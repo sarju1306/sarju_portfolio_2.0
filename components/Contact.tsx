@@ -67,8 +67,8 @@ export default function Contact() {
                   </div>
                 </a>
 
-                <div className="flex flex-col items-center gap-3 p-4 glass-effect rounded-lg">
-                  <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-red-500 rounded-lg flex items-center justify-center">
+                <div className="flex flex-col items-center gap-3 p-4 glass-effect rounded-lg hover:bg-white/10 transition-all duration-300 group">
+                  <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-red-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                     <FaMapMarkerAlt className="text-2xl" />
                   </div>
                   <div className="text-center">
@@ -126,9 +126,9 @@ export default function Contact() {
           viewport={{ once: true }}
           className="mt-16 text-center glass-effect rounded-xl p-8 max-w-3xl mx-auto"
         >
-          <h3 className="text-xl font-bold mb-4 gradient-text">Dev Wisdom</h3>
+          <h3 className="text-xl font-bold mb-4 gradient-text">Code Mantra</h3>
           <p className="text-2xl italic text-gray-300">
-            "Always write clean, maintainable code"
+            "Building scalable solutions with clean architecture and pixel-perfect precision."
           </p>
         </motion.div>
       </div>

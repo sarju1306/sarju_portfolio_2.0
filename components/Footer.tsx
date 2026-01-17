@@ -27,32 +27,7 @@ export default function Footer() {
             <p className="text-gray-400 mb-4">
               {personalInfo.title} passionate about creating scalable, innovative web solutions.
             </p>
-            <div className="flex gap-4">
-              <a
-                href={personalInfo.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 glass-effect rounded-full hover:bg-white/10 transition-all duration-300"
-              >
-                <FaGithub className="text-xl" />
-              </a>
-              <a
-                href={personalInfo.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 glass-effect rounded-full hover:bg-white/10 transition-all duration-300"
-              >
-                <FaLinkedin className="text-xl" />
-              </a>
-              <a
-                href={personalInfo.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 glass-effect rounded-full hover:bg-white/10 transition-all duration-300"
-              >
-                <FaWhatsapp className="text-xl" />
-              </a>
-            </div>
+         
           </motion.div>
 
           {/* Quick Links */}

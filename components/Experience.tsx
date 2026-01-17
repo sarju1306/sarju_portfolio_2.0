@@ -10,7 +10,7 @@ export default function Experience() {
   const allExperiences = [...workExperiences, ...education];
 
   return (
-    <section id="experience" className="py-20 px-4 relative overflow-hidden scroll-mt-20">
+    <section id="experience" className="pb-20 px-4 relative overflow-hidden scroll-mt-20">
       {/* Background effects */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
@@ -180,7 +180,7 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="mt-16 text-center glass-effect rounded-xl p-8"
+          className="mt-20 text-center glass-effect rounded-xl p-8"
         >
           <h3 className="text-2xl font-bold mb-4 gradient-text">
             Learning Never Stops

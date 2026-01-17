@@ -3,17 +3,17 @@ import { Skill, Project, Experience } from '@/types';
 
 export const personalInfo = {
   name: "Sarju Dharsandiya",
-  title: "Web Developer",
-  tagline: "Coding with passion and precision.",
+  title: "Software Development Engineer",
+  tagline: "Transforming ideas into seamless digital experiences.",
   email: "dharsandiyasarju.it@gmail.com",
   phone: "+91 9016161800",
-  location: "Gandhinagar, Gujarat, India",
+  location: "Rajkot, Gujarat, India",
   github: "https://github.com/sarju90",
   linkedin: "https://linkedin.com/in/sarju-dharsandiya",
   whatsapp: "https://wa.me/9016161800",
-  experience: "2+ years",
+  experience: "3+ years",
   education: "B.Tech in Information & Technology",
-  bio: `Hi! I'm Sarju Dharsandiya, a passionate and dedicated web developer with a deep love for creating scalable, innovative web solutions. Over the years, I've honed my skills in designing elegant front-end interfaces and building robust back-end systems.
+  bio: `Hi! I'm Sarju Dharsandiya, a passionate and dedicated software development engineer with a deep love for creating scalable, innovative web solutions. Over the years, I've honed my skills in designing elegant front-end interfaces and building robust back-end systems.
 
 My journey began with a curiosity for technology, which quickly grew into a career that I am immensely proud of. I believe in staying ahead of the curve, continuously learning, and adopting the latest technologies to deliver exceptional results for my clients and projects.
 

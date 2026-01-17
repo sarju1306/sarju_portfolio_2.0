@@ -24,9 +24,11 @@ export default function Hero() {
             className="mb-8"
           >
             <div className="w-48 h-48 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 p-1 animate-float">
-              <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center text-6xl font-bold gradient-text">
-                SD
-              </div>
+              <img
+                src="/profile.jpg"
+                alt={personalInfo.name}
+                className="w-full h-full rounded-full object-cover"
+              />
             </div>
           </motion.div>
 
@@ -80,7 +82,7 @@ export default function Hero() {
             </a>
             <a
               href="#contact"
-              className="px-8 py-3 glass-effect rounded-full font-semibold hover:bg-white/10 transition-all duration-300"
+              className="px-8 py-3 glass-effect rounded-full font-semibold hover:bg-white/10 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
             >
               Get In Touch
             </a>
@@ -91,13 +93,13 @@ export default function Hero() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.5 }}
-            className="flex gap-4"
+            className="flex gap-4 mb-8"
           >
             <a
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 glass-effect rounded-full hover:bg-white/10 transition-all duration-300"
+              className="p-3 glass-effect rounded-full hover:bg-white/10 hover:scale-110 hover:shadow-lg hover:shadow-gray-500/30 transition-all duration-300"
             >
               <FaGithub className="text-2xl" />
             </a>
@@ -105,7 +107,7 @@ export default function Hero() {
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 glass-effect rounded-full hover:bg-white/10 transition-all duration-300"
+              className="p-3 glass-effect rounded-full hover:bg-white/10 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
             >
               <FaLinkedin className="text-2xl" />
             </a>
@@ -113,32 +115,9 @@ export default function Hero() {
               href={personalInfo.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 glass-effect rounded-full hover:bg-white/10 transition-all duration-300"
+              className="p-3 glass-effect rounded-full hover:bg-white/10 hover:scale-110 hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300"
             >
               <FaWhatsapp className="text-2xl" />
-            </a>
-          </motion.div>
-
-          {/* Scroll Indicator */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 0.5 }}
-            className="mt-16"
-          >
-            <a href="#about" className="flex flex-col items-center text-gray-400 hover:text-white transition-colors">
-              <span className="text-sm mb-2">Scroll Down</span>
-              <svg
-                className="w-6 h-6 animate-bounce"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-              </svg>
             </a>
           </motion.div>
         </div>
